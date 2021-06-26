@@ -1,6 +1,6 @@
 import os
 from PIL import Image
-folder_path = '/Users/sharath/Desktop/dataset_dogs_vs_cats/train'
+folder_path = 'enter your dataset path here'
 extensions = []
 for fldr in os.listdir(folder_path):
     sub_folder_path = os.path.join(folder_path, fldr)
