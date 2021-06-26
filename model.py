@@ -51,7 +51,7 @@ def run_test_harness():
 	# specify imagenet mean values for centering
 	datagen.mean = [123.68, 116.779, 103.939]
 	# prepare iterator
-	train_it = datagen.flow_from_directory('/Users/sharath/Desktop/dataset_dogs_vs_cats/train',
+	train_it = datagen.flow_from_directory('enter the data set path',
 		class_mode='binary', batch_size=64, target_size=(200, 200))
 	# fit model
 	model.fit_generator(train_it, steps_per_epoch=len(train_it), epochs=10, verbose=1)

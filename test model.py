@@ -16,9 +16,9 @@ def load_image(filename):
 
 def run_example():
     # load the image
-    img = load_image('/Users/sharath/Desktop/dog5test.png')
+    img = load_image('enter the path of the picture you want to predict')
     # load model
-    model = load_model('/Users/sharath/Desktop/kewk/initialmodel.h5')
+    model = load_model('enter the path of the model')
     # predict the class
     result = model.predict(img)
     if result[0] == 1:
